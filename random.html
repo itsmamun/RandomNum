@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Number Example</title>
+  </head>
+  <body>
+    <button id="generate-btn">Generate Random Number</button>
+    <p>The random number is: <span id="result"></span></p>
+    <script>
+      const generateBtn = document.getElementById('generate-btn');
+      generateBtn.addEventListener('click', () => {
+        const randomNumber = Math.floor(Math.random() * 10000);
+        const resultElement = document.getElementById('result');
+        resultElement.textContent = randomNumber;
+      });
+    </script>
+  </body>
+</html>
